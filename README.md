@@ -1,8 +1,6 @@
-# React + Vite
+This is the frontend ecommerce application which I managed to make using reactjs. I styled it using tailwindcss. Some of the data I used like images, are from dummyjson api. When you run it, you will find something amazing from it.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# How to run Jovix
+ first make sure that you are in folder which contains the frontend application, type (npm i) to install the packages which you have not installed from npm.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ After that, run (npm run dev) command to start the frontend server. open it in your browser and feel free to use it.
