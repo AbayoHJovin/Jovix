@@ -10,7 +10,7 @@ export default function BoughtItem() {
       </h1>
       <h3 className="text-center text-2xl my-3">Thank you for trying</h3>
       <button
-        onClick={() => navigate("/home")}
+        onClick={() => navigate("/")}
         className="bg-blue-500 text-white px-4 py-2 rounded-md mt-4"
       >
         Home

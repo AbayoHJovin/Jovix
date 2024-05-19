@@ -77,7 +77,7 @@ export default function Cart() {
         <FaHome
           className="float-right md:mr-32 cursor-pointer"
           size={30}
-          onClick={() => navigate("/home")}
+          onClick={() => navigate("/")}
         />
       </nav>
       {isAvailable.length ? (
