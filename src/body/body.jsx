@@ -246,7 +246,7 @@ export default function Loader() {
                   </p>
                 </div>
                 <AiFillLike
-                  className="hover:text-white hover:bg-blue-500 rounded-full p-1 cursor-pointer md:mr-4"
+                  className="hover:text-white hover:bg-orange-500 rounded-full p-1 cursor-pointer md:mr-4"
                   size={40}
                 />
               </div>

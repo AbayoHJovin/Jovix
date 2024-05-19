@@ -20,32 +20,34 @@ export default function Explanations({ filter }) {
   const navigate = useNavigate();
 
   return (
-    <div className="mb-[40px] bg-gray-300 sticky top-12 md:top-24 z-[4]">
-      <div className="flex mt-[10px] p-5 flex-wrap items-center justify-between">
-        <h1 className="font-bold text-[30px] mb-4 md:mb-0 md:mr-10">
+    <div className="mb-8 md:mb-16 bg-gray-300 sticky top-12 md:top-24 z-[2]">
+      <div className="flex mt-2 md:mt-5 p-3 md:p-5 flex-wrap items-center justify-between">
+        <h1 className="font-bold text-2xl md:text-3xl mb-2 md:mb-0 md:mr-10 hidden md:block">
           Our Products
         </h1>
-        <div className="relative flex-grow md:max-w-[450px] mx-auto md:mx-0">
-          <AiOutlineSearch
-            size={20}
-            className="absolute top-1/2 left-3 transform -translate-y-1/2 text-black"
-          />
-          <input
-            type="search"
-            onInput={handleInputChange}
-            className="outline-none bg-[#fff] border border-black w-full h-[50px] rounded-lg pl-12 pr-2 text-black"
-            placeholder="Which product are you looking for?"
-          />
-        </div>
-        <div className="relative">
-          <AiOutlineShoppingCart
-            onClick={() => navigate("/cart")}
-            size={50}
-            className="fill-orange-400 cursor-pointer mr-20"
-          />
-          <span className="absolute -top-2 -right-2 bg-green-500 p-2 rounded-full font-bold mr-20 text-white">
-            {amount}
-          </span>
+        <div className="flex gap-10 justify-center content-center">
+          <div className="relative flex-grow w-full max-w-md md:max-w-[450px] mx-auto md:mx-0">
+            <AiOutlineSearch
+              size={20}
+              className="absolute top-1/2 left-3 transform -translate-y-1/2 text-black"
+            />
+            <input
+              type="search"
+              onInput={handleInputChange}
+              className="outline-none bg-white border border-black w-full h-10 md:h-12 rounded-lg pl-10 pr-2 text-black"
+              placeholder="Search for a product ..."
+            />
+          </div>
+          <div className="relative">
+            <AiOutlineShoppingCart
+              onClick={() => navigate("/cart")}
+              size={32}
+              className="fill-orange-400 cursor-pointer mr-4 md:mr-8"
+            />
+            <span className="absolute -top-2 -right-2 bg-green-500 p-1 rounded-full font-bold mr-4 md:mr-8 text-white">
+              {amount}
+            </span>
+          </div>
         </div>
       </div>
     </div>
