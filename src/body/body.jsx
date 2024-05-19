@@ -1,11 +1,6 @@
 import { useState, useEffect } from "react";
-import {
-  FaShoppingCart,
-  FaDollarSign,
-  FaCircle,
-  FaHeart,
-  FaCheckCircle,
-} from "react-icons/fa";
+import "../../src/index.css";
+import { FaShoppingCart, FaCheckCircle } from "react-icons/fa";
 import { AiFillLike, AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Slide from "./slide";
 import Explanations from "./explanations";
@@ -13,7 +8,6 @@ import Footer from "./Footer";
 
 export default function Loader() {
   const [showMenu, setShowMenu] = useState(false);
-  const [size, setSize] = useState(false);
   const [error, setError] = useState(null);
   const [images, setImages] = useState([]);
   const [filter, setFilter] = useState("laptops");
@@ -121,41 +115,23 @@ export default function Loader() {
             <h1 className="font-bold text-white flex">J{icon}VIX</h1>
           </div>
 
-          <div className="hidden md:visible md:flex py-7">
-            <p
-              onClick={handleAll}
-              className="mr-6 text-white hover:underline cursor-pointer underline-offset-[20px]"
-            >
+          <div className="hidden md:flex items-center h-[3rem] justify-center py-4 md:py-0">
+            <p onClick={handleAll} className="nav-link">
               All
             </p>
-            <p
-              onClick={handleElectrical}
-              className="mr-6 text-white hover:underline cursor-pointer underline-offset-[20px]"
-            >
+            <p onClick={handleElectrical} className="nav-link">
               PC & Phones
             </p>
-            <p
-              onClick={handlechange}
-              className="mr-6 text-white hover:underline cursor-pointer underline-offset-[20px]"
-            >
+            <p onClick={handlechange} className="nav-link">
               Furniture
             </p>
-            <p
-              onClick={handleWomen}
-              className="mr-6 text-white hover:underline cursor-pointer underline-offset-[20px]"
-            >
+            <p onClick={handleWomen} className="nav-link">
               Men & Women
             </p>
-            <p
-              onClick={handleMen}
-              className="mr-6 text-white hover:underline cursor-pointer underline-offset-[20px]"
-            >
+            <p onClick={handleMen} className="nav-link">
               Decoration
             </p>
-            <p
-              onClick={handleTops}
-              className="mr-6 text-white hover:underline cursor-pointer underline-offset-[20px]"
-            >
+            <p onClick={handleTops} className="nav-link">
               Lighting
             </p>
           </div>

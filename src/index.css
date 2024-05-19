@@ -6,3 +6,6 @@ body{
   background-color:#bbbec3;
   overflow-x: hidden;
 }
+.nav-link {
+  @apply mr-6 text-white hover:underline cursor-pointer underline-offset-[20px];
+}

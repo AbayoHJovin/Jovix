@@ -20,7 +20,7 @@ export default function Explanations({ filter }) {
   const navigate = useNavigate();
 
   return (
-    <div className="mb-8 md:mb-16 bg-gray-300 sticky top-12 md:top-24 z-[2]">
+    <div className="mb-8 md:mb-16 bg-gray-300 sticky top-12 md:top-16 z-[2]">
       <div className="flex mt-2 md:mt-5 p-3 md:p-5 flex-wrap items-center justify-between">
         <h1 className="font-bold text-2xl md:text-3xl mb-2 md:mb-0 md:mr-10 hidden md:block">
           Our Products

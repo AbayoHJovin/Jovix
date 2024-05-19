@@ -1,6 +1,5 @@
 import { FaShoppingCart, FaHome, FaCheckCircle } from "react-icons/fa";
 import { useEffect, useState } from "react";
-import { AiFillCloseCircle } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import OrderForm from "./form";
 
@@ -8,7 +7,6 @@ export default function Cart() {
   const [isAvailable, setAvailable] = useState([]);
   const [subTotal, setSubTotal] = useState({});
   const [total, setTotal] = useState(0);
-  const [product, setProd] = useState(1);
   const icon = [];
   const [formCalled, setFormCalled] = useState("hidden");
   const [itemName, setItemName] = useState({});
@@ -30,7 +28,6 @@ export default function Cart() {
   }, []);
 
   useEffect(() => {
-    // Calculate the total based on the updated subTotal state
     let sum = 0;
     for (const item of isAvailable) {
       sum += item.price * (subTotal[item.id] || 1);
@@ -38,12 +35,6 @@ export default function Cart() {
     setTotal(sum);
   }, [subTotal, isAvailable]);
 
-  const handleQuantityChange = (item, quantity) => {
-    setSubTotal((prev) => ({
-      ...prev,
-      [item.id]: quantity,
-    }));
-  };
 
   function removeItem(item, index) {
     const isonCart = JSON.parse(localStorage.getItem("CartItems"));
