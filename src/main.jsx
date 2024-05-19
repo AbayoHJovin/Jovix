@@ -7,15 +7,14 @@ import Loader from "./body/body";
 import Cart from "./cart/cart";
 
 const router = createBrowserRouter([
-
   {
-    path: "/Home",
-    element:<Loader/>,
+    path: "/",
+    element: <Loader />,
   },
 
   {
     path: "/cart",
-    element:<Cart/>,
+    element: <Cart />,
   },
   {
     path: "/bought",

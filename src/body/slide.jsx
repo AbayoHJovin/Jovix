@@ -1,4 +1,3 @@
-import Img1 from "./PC.jpg";
 import cart1 from "./cart1.png";
 
 export default function Slide() {
